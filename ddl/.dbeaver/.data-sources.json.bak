@@ -1,0 +1,47 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-194de0370cb-1decef69459afc41": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"configurationType": "MANUAL",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-194de0370cb-1decef69459afc41": {
+			"SCOTT": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202502120950\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-194de0370cb-1decef69459afc41\"\u003e\u003centity id\u003d\"1\" name\u003d\"BONUS\" fq-name\u003d\"SCOTT.BONUS\" order\u003d\"0\" x\u003d\"217\" y\u003d\"632\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"DEPT\" fq-name\u003d\"SCOTT.DEPT\" order\u003d\"1\" x\u003d\"217\" y\u003d\"448\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"EMP\" fq-name\u003d\"SCOTT.EMP\" order\u003d\"2\" x\u003d\"20\" y\u003d\"390\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"SALGRADE\" fq-name\u003d\"SCOTT.SALGRADE\" order\u003d\"3\" x\u003d\"20\" y\u003d\"644\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"TBL_CARD\" fq-name\u003d\"SCOTT.TBL_CARD\" order\u003d\"4\" x\u003d\"459\" y\u003d\"32\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"TBL_COMPANY\" fq-name\u003d\"SCOTT.TBL_COMPANY\" order\u003d\"5\" x\u003d\"1090\" y\u003d\"293\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"TBL_MEMBER\" fq-name\u003d\"SCOTT.TBL_MEMBER\" order\u003d\"6\" x\u003d\"1088\" y\u003d\"54\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"TBL_PRODUCT\" fq-name\u003d\"SCOTT.TBL_PRODUCT\" order\u003d\"7\" x\u003d\"459\" y\u003d\"367\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK_DEPTNO\" fq-name\u003d\"SCOTT.EMP.FK_DEPTNO\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"FK_CARD_COMPANY\" fq-name\u003d\"SCOTT.TBL_CARD.FK_CARD_COMPANY\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"FK_PRODUCT_COMPANY\" fq-name\u003d\"SCOTT.TBL_PRODUCT.FK_PRODUCT_COMPANY\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"8\"/\u003e\u003crelation name\u003d\"FK_CARD_MEMBER\" fq-name\u003d\"SCOTT.TBL_CARD.FK_CARD_MEMBER\" type\u003d\"fk\" pk-ref\u003d\"7\" fk-ref\u003d\"5\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
